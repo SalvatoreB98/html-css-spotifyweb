@@ -41,7 +41,8 @@ aside img, aside .fa{
     height: 25x;
 }
 aside .logo{
-    width: 75%;
+    padding-left: 25px;
+    width: 80%;
 }
 aside ul{
     list-style: none;
@@ -49,15 +50,15 @@ aside ul{
 aside li{
     margin: 17px 0;
 }
-.item{
-    vertical-align: middle;
-    display: inline-block;
+aside a{
     font-size: 12px;
     color: #949494;
     font-weight: 500;
 }
 aside .playlist{
     flex-grow: 2;
+}
+aside h3{
 }
 aside .fa{
     font-size: 40px;
@@ -114,4 +115,11 @@ aside .fa{
     border-bottom: 1px solid white;
     width: 100%;
     margin: 10px 0;
+}
+.align-center-inline{
+    vertical-align: middle;
+    display: inline-block;
+}
+.padding{
+    padding-left: 25px;
 }
