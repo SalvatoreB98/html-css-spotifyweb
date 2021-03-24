@@ -41,6 +41,7 @@ aside img, aside .fa{
     height: 25x;
 }
 aside .logo{
+    margin-bottom: 15px;
     padding-left: 25px;
     width: 80%;
 }
@@ -81,6 +82,9 @@ aside .fa{
 .crea-playlist{
     font-size: 15px;
     margin-left: 15px;
+}
+aside .selected{
+    border-left: 4px solid #adff2f
 }
 /* CONTENTS */
 .contents{
