@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* SELETTORI DI TAG */
+nav{
+    background-color: #282828;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+main{
+    display: flex;
+}
+aside{
+    background-color: black;
+    width: 250px;
+    height: calc(100vh - 80px);
+}
+/* CONTENTS */
+.contents{
+    background-color: #141922;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+.top-bar{
+    height: 60px;
+    background-color: #080b12;
+}
