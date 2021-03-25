@@ -24,9 +24,17 @@
                         <div class="song-name padding">
                             Forever
                         </div>
-                        <div class="album padding">
+                        <a href="#">
+                            <div class="album padding">
                             Asap Rocky
+                            </div>
+                        </a>
+                        <div>
                         </div>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa fa-heart-o padding" aria-hidden="true"></i></a>
+                        <a href="#"> <i class="fa fa-folder-o padding" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <!-- PLAYER AT THE CENTER -->
@@ -41,19 +49,22 @@
                     <div class="progress fill-width">
                         <div class="min-sec align-center-inline">0:33</div>
                         <div class="bar-track align-center-inline">
-                            <div class="bar"></div>
+                            <div class="bar">
+                                <div class="cursor"></div>
+                            </div>
                         </div>
                         <div class="min-sec align-center-inline">3:33</div>
                     </div>
                 </div>
                 <!-- CONTROLS VOLUME ETCETERA -->
                 <div class="controls flex-fill">
-                    <div class="little-margin"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                    <div class="little-margin"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-                    <div class="little-margin"><i class="fa fa-volume-up" aria-hidden="true"></i></div>
+                    <a href="#" class="little-margin-side"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    <a href="#" class="little-margin-side"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+                    <a href="#" class="little-margin-side"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
                     <!-- BARRA PER AUDIO -->
-                    <div class="bar-track little-margin audio-bar">
+                    <div class="bar-track little-margin-side audio-bar">
                         <div class="bar">
+                            <div class="cursor"></div>
                         </div>
                     </div>
                 </div>
@@ -87,9 +98,9 @@
                 <div class="playlist padding">
                     <h3 class="hidden-xs">PLAYLIST</h3>
                     <ul  class="hidden-xs">
-                        <li>
-                            <i class="fa fa-plus-square" aria-hidden="true"></i>
-                            <a class="item crea-playlist" href="#">Crea Playlist</a>
+                        <li class="crea-playlist">
+                            <a href="#"> <i class="fa fa-plus-square" aria-hidden="true"></i></a>
+                            <a class="hidden-xs little-margin-side" href="#"> Crea Playlist</a>
                         </li>
                         <li>
                             <a href="#">Summer</a>
@@ -110,7 +121,7 @@
                 </div>
                 <div class="description padding">
                     <div>
-                        <img src="img/download.svg" alt=""> <div class="align-center-inline hidden-xs">Installa app</div> 
+                        <img src="img/download.svg" class="padding-top-btm align-center-inline" alt=""> <a class="align-center-inline hidden-xs">Installa app</a> 
                     </div>
                     <div class="hidden-xs horizontal-line"></div>
                     <div class="artist-photo"><img src="img/profile.svg" alt=""></div>

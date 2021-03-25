@@ -23,10 +23,15 @@ main{
     display: flex;
 }
 a{
-    color: white;
+    color: #949494;
     text-decoration: none;
 }
-
+a:hover{
+    color: white;
+}
+h3{
+    font-size: 13px;
+}
 /* NAV / PLAYER */
 .playing, .player, .controls{
     padding: 10px 0px;
@@ -36,11 +41,6 @@ a{
 .playing .album{
     font-size: 13px;
     font-weight: 200;
-    padding-right: 0;
-
-}
-.playing .song-name{
-    padding-right: 0;
 }
 .playing{
     display: flex;
@@ -63,7 +63,7 @@ a{
     text-align: center;
 }
 .player-buttons .fa{
-    margin: 10px;
+    margin: 0px 10px;
 }
 .controls{
     display: flex;
@@ -83,9 +83,10 @@ a{
     width: 30%;
     height: 100%;
     background-color: #b3b3b3 ;
+    position: relative;
 }
 .audio-bar{
-    min-width: 25px;
+    min-width: 50px;
     max-width: 100px;
 }
 .progress{
@@ -94,6 +95,20 @@ a{
 .min-sec{
     font-size: 12px;
     font-weight: 200;
+}
+.cursor{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    transform: translate(50%,-40%);
+    border-radius: 50%;
+    z-index: 2;
+    display: none;
+}
+.big-btn:hover{
+    transform: scale(1.4,1.4);
 }
 /* ASIDE / SIDEBAR*/
 aside{
@@ -109,7 +124,6 @@ aside{
 aside img, aside .fa{
     font-size: 30px;
     vertical-align: middle;
-    color: #666666;
     width: 25px;
 
 }
@@ -126,7 +140,6 @@ aside li{
 }
 aside a{
     font-size: 12px;
-    color: #949494;
     font-weight: 500;
 }
 .playlist{
@@ -154,10 +167,6 @@ aside .fa{
 .artist-name{
     font-weight: 600;
 }
-.crea-playlist{
-    font-size: 15px;
-    margin-left: 15px;
-}
 aside .selected{
     border-left: 4px solid #adff2f
 }
@@ -170,16 +179,37 @@ aside .selected{
 .top-bar{
     background-color: #080b12;
     width: 100%;
-    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    min-height: 70px;
+    max-height: 70px;
 }
 .top-bar a{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     padding: 10px 35px;
-    float: right;
     color: white;
     border: 1px solid white;
+    white-space:nowrap;
     border-radius: 20px;
+    transform: scale(0.9,0.9);
+}
+/* HOVER */
+.bar-track:hover .cursor{
+    display: inline-block;
+}
+.bar-track:hover .bar{
+    background-color: #1db954;
+}
+.big-btn:hover{
+    font-size: 27px;
+}
+.top-bar a:hover{
+    transform: scale(1,1);
+}
+.crea-playlist:hover  a{
+    color: white;
 }
 /* SCROLLBAR */
 ::-webkit-scrollbar {

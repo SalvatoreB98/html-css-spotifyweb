@@ -26,14 +26,21 @@
 .padding-right-none{
     padding-right: 0;
 }
-.little-margin{
+.little-margin-side{
     margin: 0px 7px;
 }
-.big-btn{
-    font-size: 25px;
+.padding-top-btm{
+    padding: 7px 0px;
 }
+.big-btn{
+    font-size: 30px;
+}
+
 .fill-width{
     width: 100%;
+}
+.transparent{
+    background-color: #ff00003d;
 }
 /* RESPONSIVENESS UTILITIES */
 @media screen and (max-width:768px){
