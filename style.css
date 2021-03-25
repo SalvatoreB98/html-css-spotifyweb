@@ -17,6 +17,7 @@ nav{
     bottom: 0;
     z-index: 100;
     width: 100%;
+    color: white;
 }
 main{
     display: flex;
@@ -27,29 +28,43 @@ a{
 
 /* NAV / PLAYER */
 .playing{
-
+    
 }
 .player{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.player-buttons{
+    /* margin-bottom: 25px; */
+}
+.player-buttons .fa{
+    margin: 10px;
 }
 .controls{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: white;
+
 }
-.controls > div{
-}
-.audio-bar-track{
+.bar-track{
     background-color: #535353;
-    width: 100px;
+    width: 100%;
     height: 5px;
     border-radius: 4px;
 }
-.audio-bar{
+.bar{
     width: 75%;
     height: 100%;
     background-color: #b3b3b3 ;
+}
+.progress .bar-track{
+    width: 300px;
+}
+.min-sec{
+    font-size: 12px;
+    font-weight: 200;
 }
 /* ASIDE / SIDEBAR*/
 aside{
