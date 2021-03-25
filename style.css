@@ -28,7 +28,6 @@ a{
 }
 
 /* NAV / PLAYER */
-
 .playing, .player, .controls{
     padding: 10px 0px;
     flex-grow: 1;
@@ -37,7 +36,11 @@ a{
 .playing .album{
     font-size: 13px;
     font-weight: 200;
+    padding-right: 0;
 
+}
+.playing .song-name{
+    padding-right: 0;
 }
 .playing{
     display: flex;
@@ -77,7 +80,7 @@ a{
     border-radius: 4px;
 }
 .bar{
-    width: 75%;
+    width: 30%;
     height: 100%;
     background-color: #b3b3b3 ;
 }
@@ -132,8 +135,6 @@ aside a{
 }
 aside .playlist{
     flex-grow: 2;
-}
-aside h3{
 }
 aside .fa{
     font-size: 40px;
