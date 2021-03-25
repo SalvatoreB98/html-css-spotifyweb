@@ -12,6 +12,9 @@
     width: 100%;
     margin: 10px 0;
 }
+.flex-fill{
+    flex-grow: 1;
+}
 .align-center-inline{
     vertical-align: middle;
     display: inline-block;
@@ -19,4 +22,25 @@
 .padding{
     padding-left: 20px;
     padding-right: 10px;
+}
+.little-margin{
+    margin: 0px 7px;
+}
+@media screen and (max-width:768px){
+    .hidden-xs{
+        display: none ;
+    }
+   
+    .padding{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sidebar .selected{
+        border: none;
+    }
+}
+@media screen and (min-width:769px){
+    .visible-xs{
+        display: none;
+    }
 }

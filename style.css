@@ -12,6 +12,7 @@ nav{
     background-color: #282828;
     height: 80px;
     display: flex;
+    flex-direction: row;
     position: fixed;
     bottom: 0;
     z-index: 100;
@@ -23,8 +24,32 @@ main{
 a{
     text-decoration: none;
 }
-::-webkit-scrollbar-track {
-    background: black;
+
+/* NAV / PLAYER */
+.playing{
+
+}
+.player{
+    text-align: center;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+.controls > div{
+}
+.audio-bar-track{
+    background-color: #535353;
+    width: 100px;
+    height: 5px;
+    border-radius: 4px;
+}
+.audio-bar{
+    width: 75%;
+    height: 100%;
+    background-color: #b3b3b3 ;
 }
 /* ASIDE / SIDEBAR*/
 aside{
@@ -42,7 +67,7 @@ aside img, aside .fa{
     vertical-align: middle;
     color: #666666;
     width: 25px;
-    height: 25x;
+
 }
 aside .logo{
     margin-bottom: 15px;
@@ -132,4 +157,14 @@ aside .selected{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+  /* RESPONSIVENESS */
+  @media screen and (max-width:768px){
+      body{
+          background-color: black;
+      }
+      .sidebar{
+          width: auto;
+          padding: 5px;
+      }
   }
