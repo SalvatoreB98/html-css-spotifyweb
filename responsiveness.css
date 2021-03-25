@@ -1,0 +1,18 @@
+  /* RESPONSIVENESS */
+  @media screen and (max-width:768px){
+    body{
+        background-color: black;
+    }
+    .sidebar{
+        width: auto;
+        padding: 5px;
+    }
+    .padding{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sidebar .selected{
+        border: none;
+    }
+}
+

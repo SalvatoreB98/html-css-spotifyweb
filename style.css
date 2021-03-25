@@ -23,21 +23,41 @@ main{
     display: flex;
 }
 a{
+    color: white;
     text-decoration: none;
 }
 
 /* NAV / PLAYER */
+
+.playing, .player, .controls{
+    padding: 10px 0px;
+    flex-grow: 1;
+}
+/* CURRENTLY PLAYING SONG */
+.playing .album{
+    font-size: 13px;
+    font-weight: 200;
+
+}
 .playing{
-    
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.playing img{
+    width: 37px;
+    height: 37px;
 }
 .player{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 .player-buttons{
-    /* margin-bottom: 25px; */
+    width: 250px;
+    text-align: center;
 }
 .player-buttons .fa{
     margin: 10px;
@@ -46,11 +66,13 @@ a{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
+}
+.controls .fa{
+    font-size: 12px;
 }
 .bar-track{
     background-color: #535353;
-    width: 100%;
+    width: 75%;
     height: 5px;
     border-radius: 4px;
 }
@@ -59,8 +81,12 @@ a{
     height: 100%;
     background-color: #b3b3b3 ;
 }
-.progress .bar-track{
-    width: 300px;
+.audio-bar{
+    min-width: 25px;
+    max-width: 100px;
+}
+.progress{
+    text-align: center;
 }
 .min-sec{
     font-size: 12px;
@@ -158,28 +184,12 @@ aside .selected{
 ::-webkit-scrollbar {
     width: 10px;
   }
-  
-  /* Track */
   ::-webkit-scrollbar-track {
     background: #000000;
   }
-  
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
   }
-  
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
-  /* RESPONSIVENESS */
-  @media screen and (max-width:768px){
-      body{
-          background-color: black;
-      }
-      .sidebar{
-          width: auto;
-          padding: 5px;
-      }
   }

@@ -12,7 +12,7 @@
     width: 100%;
     margin: 10px 0;
 }
-.flex-fill{
+.flex-grow-1{
     flex-grow: 1;
 }
 .align-center-inline{
@@ -23,24 +23,22 @@
     padding-left: 20px;
     padding-right: 10px;
 }
+.padding-right-none{
+    padding-right: 0;
+}
 .little-margin{
     margin: 0px 7px;
 }
 .big-btn{
     font-size: 25px;
 }
-
+.fill-width{
+    width: 100%;
+}
+/* RESPONSIVENESS UTILITIES */
 @media screen and (max-width:768px){
     .hidden-xs{
         display: none ;
-    }
-   
-    .padding{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .sidebar .selected{
-        border: none;
     }
 }
 @media screen and (min-width:769px){
