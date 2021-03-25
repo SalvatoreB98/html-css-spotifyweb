@@ -6,6 +6,7 @@
 /* SELETTORI DI TAG */
 html{
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    
 }
 nav{
     background-color: #282828;
@@ -21,6 +22,9 @@ main{
 }
 a{
     text-decoration: none;
+}
+::-webkit-scrollbar-track {
+    background: black;
 }
 /* ASIDE / SIDEBAR*/
 aside{
@@ -55,6 +59,10 @@ aside a{
     font-size: 12px;
     color: #949494;
     font-weight: 500;
+}
+.playlist{
+    overflow-y: scroll;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 aside .playlist{
     flex-grow: 2;
@@ -106,24 +114,22 @@ aside .selected{
     border: 1px solid white;
     border-radius: 20px;
 }
-/* UTILITIES */
-.clearfix{
-    content: "";
-    display: table ;
-    clear: both;
-}
-.rotate-90{
-    transform: rotate(90deg);
-}
-.horizontal-line{
-    border-bottom: 1px solid white;
-    width: 100%;
-    margin: 10px 0;
-}
-.align-center-inline{
-    vertical-align: middle;
-    display: inline-block;
-}
-.padding{
-    padding-left: 25px;
-}
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

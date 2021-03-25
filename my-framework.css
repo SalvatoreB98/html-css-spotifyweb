@@ -1,0 +1,22 @@
+/* UTILITIES */
+.clearfix{
+    content: "";
+    display: table ;
+    clear: both;
+}
+.rotate-90{
+    transform: rotate(90deg);
+}
+.horizontal-line{
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin: 10px 0;
+}
+.align-center-inline{
+    vertical-align: middle;
+    display: inline-block;
+}
+.padding{
+    padding-left: 20px;
+    padding-right: 10px;
+}
