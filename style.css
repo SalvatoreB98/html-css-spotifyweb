@@ -19,9 +19,11 @@ nav{
     width: 100%;
     color: white;
 }
-
+h2{
+    margin-bottom: 5px;
+}
 section{
-    padding: 25px;
+    padding: 0px 25px;
     color: white;
 }
 a{
@@ -44,6 +46,7 @@ main{
 /* LAYOUT */
 .flex-layout{
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     width: 100%;
     height: calc(100vh - 80px);
@@ -229,6 +232,8 @@ aside .selected{
 .proposal{
     padding: 20px 25px 5px 0px;
     text-align: center;
+    flex-basis: calc(100% / 6);
+        background-color: yellow;
 }
 .proposal h3{
     margin: 5px;
@@ -292,19 +297,16 @@ aside .selected{
     }
 }
 /* CONTENTS RESPONSIVENESS */
-@media screen and (min-width:1024px){
-    .proposal{
-        flex-basis: calc(100% / 6);
-    }
-}
-@media screen and (max-width:1023px) and (min-width: 900){
+@media screen and (max-width: 1023px) and (min-width: 900){
     .proposal{
         flex-basis: calc(100% / 4);
+        background-color: red;
     }
 }
-@media screen and (max-width:1023px) and (min-width: 899){
+@media screen and (max-width: 899){
     .proposal{
         flex-basis: calc(50%);
+        background-color: violet;
     }
 }
 /* UTILITIES */
