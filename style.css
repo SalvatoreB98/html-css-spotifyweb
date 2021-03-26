@@ -225,7 +225,6 @@ aside .selected{
 }
 .flex-container{
     display: flex;
-    flex-wrap: wrap;
 }
 .proposal{
     padding: 20px 25px 5px 0px;
