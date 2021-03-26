@@ -32,6 +32,9 @@ a:hover{
 h3{
     font-size: 13px;
 }
+li{
+    list-style-type: none;
+}
 /* NAV / PLAYER */
 .playing, .player, .controls{
     padding: 10px 0px;
@@ -171,7 +174,7 @@ aside .selected{
     border-left: 4px solid #adff2f
 }
 /* CONTENTS */
-.contents{
+.central-section{
     background-color: #141922;
     height: calc(100vh - 80px);
     width: 100%;
@@ -194,6 +197,18 @@ aside .selected{
     white-space:nowrap;
     border-radius: 20px;
     transform: scale(0.9,0.9);
+}
+.contents-nav-bar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+.contents-nav-bar li{
+    font-size: 13px;
+    margin: 0 15px;
+    font-weight: 500;
+    position: relative;
 }
 /* HOVER */
 .bar-track:hover .cursor{

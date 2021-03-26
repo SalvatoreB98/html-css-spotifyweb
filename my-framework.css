@@ -10,7 +10,7 @@
 .horizontal-line{
     border-bottom: 1px solid white;
     width: 100%;
-    margin: 10px 0;
+    margin: 7px 0;
 }
 .flex-grow-1{
     flex-grow: 1;
@@ -30,7 +30,7 @@
     margin: 0px 7px;
 }
 .padding-top-btm{
-    padding: 7px 0px;
+    padding: 1px 1px;
 }
 .big-btn{
     font-size: 30px;
@@ -41,6 +41,15 @@
 }
 .transparent{
     background-color: #ff00003d;
+}
+.selection-mark{
+    position: absolute;
+    left: 50%;
+    height: 2px;
+    width: 30px;
+    background-color: #ADFF2F;
+    transform: translateX(-50%);
+    margin-top: 5px;
 }
 /* RESPONSIVENESS UTILITIES */
 @media screen and (max-width:768px){
