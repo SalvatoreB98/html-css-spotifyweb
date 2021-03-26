@@ -5,73 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="my-framework.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsiveness.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Spotify Home</title>
 </head>
     <body>
-        <!-- NAV / PLAYER -->
-        <header>
-            <nav>
-                <!-- CURRENT TRACK PLAYING -->
-                <div class="playing flex-fill">
-                    <img src="img/sinister.jpeg" alt="">
-                    <div class="track-info">
-                        <div class="song-name padding">
-                            Forever
-                        </div>
-                        <a href="#">
-                            <div class="album padding">
-                            Asap Rocky
-                            </div>
-                        </a>
-                        <div>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#"><i class="fa fa-heart-o padding" aria-hidden="true"></i></a>
-                        <a href="#"> <i class="fa fa-folder-o padding" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <!-- PLAYER AT THE CENTER -->
-                <div class="player flex-fill">
-                    <div class="player-buttons">
-                        <a href=""><i class="fa fa-random align-center-inline" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-step-backward align-center-inline" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-play-circle big-btn align-center-inline" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-step-forward align-center-inline" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-repeat align-center-inline" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="progress fill-width">
-                        <div class="min-sec align-center-inline">0:33</div>
-                        <div class="bar-track align-center-inline">
-                            <div class="bar">
-                                <div class="cursor"></div>
-                            </div>
-                        </div>
-                        <div class="min-sec align-center-inline">3:33</div>
-                    </div>
-                </div>
-                <!-- CONTROLS VOLUME ETCETERA -->
-                <div class="controls flex-fill">
-                    <a href="#" class="little-margin-side"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                    <a href="#" class="little-margin-side"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-                    <a href="#" class="little-margin-side"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
-                    <!-- BARRA PER AUDIO -->
-                    <div class="bar-track little-margin-side audio-bar">
-                        <div class="bar">
-                            <div class="cursor"></div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <!-- SIDE BAR -->
+        <div class="flex-layout">
+            <header class="position-fixed">
+                <!-- NAV / PLAYER -->
+                   <nav>
+                       <!-- CURRENT TRACK PLAYING -->
+                       <div class="playing flex-fill">
+                           <img src="img/sinister.jpeg" alt="">
+                           <div class="track-info">
+                               <div class="song-name padding">
+                                   Forever
+                               </div>
+                               <a href="#">
+                                   <div class="album padding">
+                                   Asap Rocky
+                                   </div>
+                               </a>
+                               <div>
+                               </div>
+                           </div>
+                           <div>
+                               <a href="#"><i class="fa fa-heart-o padding" aria-hidden="true"></i></a>
+                               <a href="#"> <i class="fa fa-folder-o padding" aria-hidden="true"></i></a>
+                           </div>
+                       </div>
+                       <!-- PLAYER AT THE CENTER -->
+                       <div class="player flex-fill">
+                           <div class="player-buttons">
+                               <a href=""><i class="fa fa-random align-center-inline" aria-hidden="true"></i></a>
+                               <a href=""><i class="fa fa-step-backward align-center-inline" aria-hidden="true"></i></a>
+                               <a href=""><i class="fa fa-play-circle big-btn align-center-inline" aria-hidden="true"></i></a>
+                               <a href=""><i class="fa fa-step-forward align-center-inline" aria-hidden="true"></i></a>
+                               <a href=""><i class="fa fa-repeat align-center-inline" aria-hidden="true"></i></a>
+                           </div>
+                           <div class="progress fill-width">
+                               <div class="min-sec align-center-inline">0:33</div>
+                               <div class="bar-track align-center-inline">
+                                   <div class="bar">
+                                       <div class="cursor"></div>
+                                   </div>
+                               </div>
+                               <div class="min-sec align-center-inline">3:33</div>
+                           </div>
+                       </div>
+                       <!-- CONTROLS VOLUME ETCETERA -->
+                       <div class="controls flex-fill">
+                           <a href="#" class="little-margin-side"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                           <a href="#" class="little-margin-side"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+                           <a href="#" class="little-margin-side"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
+                           <!-- BARRA PER AUDIO -->
+                           <div class="bar-track little-margin-side audio-bar">
+                               <div class="bar">
+                                   <div class="cursor"></div>
+                               </div>
+                           </div>
+                       </div>
+                   </nav>
+            </header> 
+            <!-- ASIDE BAR -->
             <aside class="sidebar">
                 <div>
                     <img class="logo hidden-xs" src="img/logo.svg" alt="">
@@ -95,7 +93,7 @@
                     </li>
                 </ul>
                 <!-- PLAYLIST -->
-                <div class="playlist padding">
+                <div class="playlist scroll-y padding">
                     <h3 class="hidden-xs">PLAYLIST</h3>
                     <ul  class="hidden-xs">
                         <li class="crea-playlist">
@@ -129,23 +127,120 @@
                 </div>
                 
             </aside>
-            <!-- CONTENTS -->
-            <div class="central-section">
-                <div class="top-bar clearfix">
+            <main class=" scroll-y">
+                <div class="top-bar">
                     <a href="#"> EFFETTUA L'UPGRADE </a>
                 </div>
-                <div class="contents-nav-bar"> 
-                    <ul>
-                        <li> <a href="#"> IN EVIDENZA <div class="selection-mark"></div></a></li>
-                        <li> <a href="#"> PODCAST</a></li>
-                        <li> <a href="#"> CLASSIFICHE</a></li>
-                        <li> <a href="#"> GENERI E MOOD</a></li>
-                        <li> <a href="#"> NUOVE USCITE</a></li>
-                        <li> <a href="#"> SCOPRI</a></li>
-                    </ul>
+                <!-- CONTENTS -->
+                <div class="central-content">
+                <div class="scroll-y">
+                    <div class="contents-nav-bar"> 
+                        <ul>
+                            <li> <a href="#"> IN EVIDENZA <div class="selection-mark"></div></a></li>
+                            <li> <a href="#"> PODCAST</a></li>
+                            <li> <a href="#"> CLASSIFICHE</a></li>
+                            <li> <a href="#"> GENERI E MOOD</a></li>
+                            <li> <a href="#"> NUOVE USCITE</a></li>
+                            <li> <a href="#"> SCOPRI</a></li>
+                        </ul>
+                    </div>
+                    <section>
+                        <h2>Recently played</h2>
+                        <div class="flex-container">
+                            <div class="proposal">
+                                <img class="fill-width" src="img/metal_lifting.jpg" alt="">
+                                <div class="little-margin-top">
+                                    <h3> Heavy Metal</h3>
+                                    <h6 class="subtitle"> Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/stranger.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3> Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                    <h6 class="subtitle"> Kyle Dickson & Micheal Stein</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/aquietplace.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3>A quiet place</h3>
+                                    <h6 class="subtitle"> Kyle Dickson & Micheal Stein</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/split.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3>Split</h3>
+                                    <h6 class="subtitle"> Patricia Crocs</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/cure.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3>A cure for wellness</h3>
+                                    <h6 class="subtitle"> Guru napal</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/sinister.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3>Sinister</h3>
+                                    <h6 class="subtitle"> Subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Recently played</h2>
+                        <div class="flex-container">
+                            <div class="proposal">
+                                <img class="fill-width" src="img/metal_lifting.jpg" alt="">
+                                <div class="little-margin-top">
+                                    <h3> Heavy Metal</h3>
+                                    <h6 class="subtitle"> Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/stranger.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3> Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                    <h6 class="subtitle"> Kyle Dickson & Micheal Stein</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/aquietplace.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3>A quiet place</h3>
+                                    <h6 class="subtitle"> Kyle Dickson & Micheal Stein</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/split.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3>Split</h3>
+                                    <h6 class="subtitle"> Patricia Crocs</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/cure.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3>A cure for wellness</h3>
+                                    <h6 class="subtitle"> Guru napal</h6>
+                                </div>
+                            </div>
+                            <div class="proposal">
+                                <img class="fill-width" src="img/sinister.jpeg" alt="">
+                                <div class="little-margin-top">
+                                    <h3>Sinister</h3>
+                                    <h6 class="subtitle"> Subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div ></div>
-            </div>
-        </main>
+                </div>
+            </main>    
+        </div>
     </body>
 </html>
