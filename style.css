@@ -139,7 +139,7 @@ main{
     color: ghostwhite;
     top: 0;
     bottom: 70px;
-    z-index: -1;
+    z-index: 0;
 }
 aside img, aside .fa{
     font-size: 30px;
@@ -329,6 +329,11 @@ aside .selected{
 @media screen and (max-width: 500px){
     .controls{
         display: none;
+    }
+}
+@media screen and (max-height: 300px){
+    .sidebar{
+        z-index: -1;
     }
 }
 /* CONTENTS RESPONSIVENESS */
