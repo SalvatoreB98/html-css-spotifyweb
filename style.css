@@ -23,7 +23,7 @@ h2{
     margin-bottom: 5px;
 }
 section{
-    padding: 0px 25px;
+    padding: 15px 25px;
     color: white;
 }
 a{
@@ -120,7 +120,7 @@ main{
     height: 15px;
     background-color: white;
     right: 0;
-    transform: translate(50%,-40%);
+    transform: translate(100%,-40%);
     border-radius: 50%;
     z-index: 2;
     display: none;
@@ -162,12 +162,14 @@ aside a{
     font-size: 12px;
     font-weight: 500;
 }
-
 aside .playlist{
     flex-grow: 2;
 }
 aside .fa{
     font-size: 40px;
+}
+.fa-plus-square{
+    margin-right: 10px;
 }
 .artist-photo{
     display: inline-block;
@@ -234,6 +236,39 @@ aside .selected{
     padding: 20px 25px 5px 0px;
     text-align: center;
     flex-basis: calc(100% / 6);
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.proposal a{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.proposal a i{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: white;
+    z-index: 4;
+}
+.proposal a:hover i{
+    display: inline-block;
+}
+.overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: #0000006c;
+}
+.proposal a:hover .overlay{
+    display: inline-block;
 }
 .proposal h3{
     margin: 5px;
@@ -368,6 +403,9 @@ aside .selected{
 .scroll-y{
     overflow-y: scroll;
     overflow-x: hidden;
+}
+.circled{
+    border-radius: 50%;
 }
 /* RESPONSIVENESS UTILITIES */
 @media screen and (max-width:768px){
