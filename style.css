@@ -252,7 +252,7 @@ aside .selected{
     transform: translateX(-50%);
     font-size: 50px;
     color: white;
-    z-index: 4;
+    z-index: 6;
 }
 .proposal a:hover i{
     display: inline-block;
@@ -331,7 +331,7 @@ aside .selected{
         display: none;
     }
 }
-@media screen and (max-height: 300px){
+@media screen and (max-height: 380px){
     .sidebar{
         z-index: -1;
     }
