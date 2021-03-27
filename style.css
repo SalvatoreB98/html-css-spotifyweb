@@ -118,9 +118,9 @@ main{
 .cursor{
     width: 15px;
     height: 15px;
+    float: right;
+    transform: translateY(-40%);
     background-color: white;
-    right: 0;
-    transform: translate(100%,-40%);
     border-radius: 50%;
     z-index: 2;
     display: none;
@@ -279,7 +279,7 @@ aside .selected{
 }
 /* HOVER */
 .bar-track:hover .cursor{
-    display: inline-block;
+    display: block;
 }
 .bar-track:hover .bar{
     background-color: #1db954;
