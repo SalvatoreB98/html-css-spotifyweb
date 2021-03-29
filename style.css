@@ -303,35 +303,22 @@ aside .selected{
 /* SCROLLBAR */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    display: none;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-/* UTILITIES */
-.clearfix{
-    content: "";
-    display: table ;
-    clear: both;
 }
+::-webkit-scrollbar-track {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* UTILITIES */
 .position-fixed{
     position: fixed;
-}
-.rotate-90{
-    transform: rotate(90deg);
 }
 .horizontal-line{
     border-bottom: 1px solid white;
     width: 100%;
     margin: 7px 0;
-}
-.flex-grow-1{
-    flex-grow: 1;
 }
 .align-center-inline{
     vertical-align: middle;
@@ -340,9 +327,6 @@ aside .selected{
 .padding{
     padding-left: 20px;
     padding-right: 10px;
-}
-.padding-right-none{
-    padding-right: 0;
 }
 .little-margin-side{
     margin: 0px 7px;
@@ -359,9 +343,6 @@ aside .selected{
 
 .fill-width{
     width: 100%;
-}
-.transparent{
-    background-color: #ff00003d;
 }
 .selection-mark{
     position: absolute;
