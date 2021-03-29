@@ -141,6 +141,7 @@ main{
     top: 0;
     bottom: 70px;
     z-index: 6;
+    overflow: hidden;
 }
 aside img, aside .fa{
     font-size: 30px;
@@ -411,11 +412,6 @@ aside .selected{
 @media screen and (max-width: 500px){
     .controls{
         display: none;
-    }
-}
-@media screen and (max-height: 380px){
-    .sidebar{
-        z-index: -1;
     }
 }
 /* CONTENTS RESPONSIVENESS */
