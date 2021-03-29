@@ -15,7 +15,7 @@ nav{
     flex-direction: row;
     position: fixed;
     bottom: 0;
-    z-index: 6;
+    z-index: 7;
     width: 100%;
     color: white;
 }
@@ -140,7 +140,7 @@ main{
     color: ghostwhite;
     top: 0;
     bottom: 70px;
-    z-index: 6;
+    z-index: 4;
     overflow: hidden;
 }
 aside img, aside .fa{
@@ -205,10 +205,10 @@ aside .selected{
     align-items: center;
     min-height: 70px;
     max-height: 70px;
-    z-index: 5;
+    /* z-index: 5;
     position:fixed;
     top:0;
-    right: 0;
+    right: 0; */
     width: 100%;
 }
 .top-bar a{
@@ -412,6 +412,11 @@ aside .selected{
 @media screen and (max-width: 500px){
     .controls{
         display: none;
+    }
+}
+@media screen and (max-height: 120px){
+    .sidebar{
+        z-index: -1;
     }
 }
 /* CONTENTS RESPONSIVENESS */
