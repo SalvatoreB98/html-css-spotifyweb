@@ -40,6 +40,7 @@ li{
     list-style-type: none;
 }
 main{
+    position: relative;
     background-color: #141922;
     width: 100%;
 }
@@ -139,7 +140,7 @@ main{
     color: ghostwhite;
     top: 0;
     bottom: 70px;
-    z-index: 0;
+    z-index: 6;
 }
 aside img, aside .fa{
     font-size: 30px;
@@ -204,6 +205,10 @@ aside .selected{
     min-height: 70px;
     max-height: 70px;
     z-index: 5;
+    position:fixed;
+    top:0;
+    right: 0;
+    width: 100%;
 }
 .top-bar a{
     font-size: 12px;
@@ -221,6 +226,7 @@ aside .selected{
     justify-content: center;
     padding: 20px 0;
     line-height: 30px;
+    margin-top: 70px;
 }
 .contents-nav-bar li{
     font-size: 13px;
